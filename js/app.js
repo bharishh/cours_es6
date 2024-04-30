@@ -54,5 +54,103 @@ console.log(prenom)
     }
 
 
+
+
+
+
+
+    // operateur = + - / % < > 
+
+    let age = 30
+     let annee = 2024
+
+     console.log(age%2)
+     
+
+
+     console.log(`Vous etes né en ${annee-age}`)
+
+
+     age%2==0 ? console.log("Nombre paire") : console.log("Nombre impaire")
+
+   
+
+
+     let prix = 55 
+     let taxe = 5.5
+
+    console.log(`totale ${prix * taxe /100}`)
+
+
+    const product=[
+        {name: "car", price: 6000},
+        {name: "Bike", price: 150},
+        {name: "phone", price: 700},
+        {name: "Watch", price: 200},
+        {name: "pen", price: 8},
+        {name: "bag", price: 50},
+    ];
+    
+// 1 er methode
+
+    console.log(product[0])
+    
+// 2e methode
+
+    product.forEach((cle) => {
+        console.log(cle.name+ ' '+cle.price)
+    });
+
+
+
+// 3e methode
+
+
+const rowNP = product.filter((row) => row.price <200)
+console.log(rowNP)
+
+
+
+
+const person_1 ={
+
+    nom:"Dup",
+    prenom : "Jean"
+
+}
+
+const person_2 ={
+
+    nom:"Bob",
+    prenom : "Lo"
+
+}
+
+const person_3 ={
+
+    nom:"Bran",
+    prenom : "Jojo"
+
+}
+
+
+const people = []
+
+people.push(person_1, person_2)
+
+console.table(people)
+
+people.forEach((key)=> {
+    console.log(key.nom+ ' '+key.prenom)
+});
+
+
+
+
+
+
+
 })()
+
+
  
